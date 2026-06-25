@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: linear-gradient(
+        rgba(255,255,255,0.88),
+        rgba(255,255,255,0.88)
+    ),
+    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:#2d3436;
+    line-height:1.6;
+    
+}
+
+header{
+    background: linear-gradient(135deg, #4f46e5, #06b6d4);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+header h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:20px;
+    opacity:0.95;
+}
+
+section{
+    max-width:1100px;
+    margin:40px auto;
+    padding:35px;
+    background:rgba(255,255,255,0.45);
+    border-radius:18px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.06);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.25);
+}
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#4f46e5;
+    font-size:32px;
+}
+
+.about{
+    text-align:center;
+}
+
+.about img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid #06b6d4;
+    margin-bottom:20px;
+    object-fit:cover;
+}
+
+.skills ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    list-style:none;
+}
+
+.skills li{
+    background:linear-gradient(135deg,#4f46e5,#06b6d4);
+    color:white;
+    padding:12px 22px;
+    margin:10px;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.skills li:hover{
+    transform:translateY(-3px);
+}
+
+.project-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.project{
+    background:white;
+    width:320px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:translateY(-8px);
+}
+
+.project img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.project h3{
+    color:#4f46e5;
+    margin:15px;
+}
+
+.project p{
+    padding:0 15px 20px;
+}
+
+.resume{
+    text-align:center;
+}
+
+.resume a{
+    display:inline-block;
+    background:linear-gradient(135deg,#4f46e5,#06b6d4);
+    color:white;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.resume a:hover{
+    opacity:0.9;
+    transform:scale(1.05);
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    font-size:18px;
+    margin:10px 0;
+}
+
+footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:rgba(30,41,59,0.95);
+    backdrop-filter:blur(10px);
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#06b6d4;
+}
+
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .nav-links{
+        margin-top:10px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .nav-links li{
+        margin:8px 12px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    
+<nav class="navbar">
+    <div class="logo">Portfolio</div>
+
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+    <header>
+        <h1>Nikhil Kumar Kundu</h1>
+        <p>Web Developer | Designer | Programmer</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Profile Photo">
+        <p>
+            Hi, I’m Nikhil Kumar Kundu, a 3rd year Engineering student specializing in Artificial Intelligence and Machine Learning (AIML) at Yeshwantrao Chavan College of Engineering (YCCE), Nagpur.
+
+I am passionate about technology, problem-solving, and building intelligent systems that can make real-world impact. I enjoy exploring areas like web development, machine learning, and data science, and I am continuously working on improving my technical and practical skills.
+
+Along with academics, I actively work on personal projects to strengthen my understanding of programming and software development. I aim to become a skilled AI Engineer and Full Stack Developer in the future.
+<br>
+Quick Highlights:<br>
+🎓 AIML Engineering Student (3rd Year), YCCE Nagpur<br>
+💡 Interested in Artificial Intelligence, Machine Learning & Web Development<br>
+🚀 Passionate about building real-world tech solutions<br>
+🧠 Constant learner focused on improving coding and problem-solving skills<br>
+🎯 Career Goal: To become a professional AI/Software Engineer<br>
+        </p>
+    </section>
+
+    <section class="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>React</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website showcasing skills, projects, and contact information.</p>
+            </div>
+
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Calculator App</h3>
+                <p>A simple calculator built using HTML, CSS, and JavaScript.</p>
+            </div>
+
+            <div class="project">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Landing Page</h3>
+                <p>A responsive landing page designed for a business website.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="resume">
+        <h2>Resume</h2>
+        <a href="resume.pdf" download>Download Resume</a>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: kundunick07@email.com</p>
+        <p>Phone: +91 9241957925</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Nikhil Kumar Kundu. All Rights Reserved.</p>
+        <p>LinkedIn: https://www.linkedin.com/in/nikhil-kumar-kundu-1947ab323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app<br>
+           GitHub: https://github.com/nikhilkundu07/CODSOFT/new/main<br>
+            </p>
+    </footer>
+
+</body>
+</html>
+
