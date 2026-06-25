@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background: linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),
+    url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1600');
+    background-size:cover;
+    background-position:center;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#1e293b;
+    padding:15px 40px;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+}
+
+.navbar ul li{
+    margin-left:20px;
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.navbar ul li a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    color:#0f172a;
+}
+
+.hero p{
+    font-size:18px;
+    margin:15px 0;
+}
+
+.btn{
+    padding:12px 25px;
+    background:#38bdf8;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+section{
+    padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
+    background:rgba(255,255,255,0.35);
+    margin-top:20px;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,0.25);
+    box-shadow:0 6px 18px rgba(0,0,0,0.06);
+    backdrop-filter:blur(15px);
+}
+
+.about p{
+    text-align:center;
+    font-size:17px;
+}
+
+.services{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+    text-align:center;
+}
+
+.card{
+    flex:1;
+    min-width:250px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    text-align:center;
+    background:#1e293b;
+    color:white;
+    padding:15px;
+    margin-top:30px;
+}
+#about p{
+    text-align:center;
+    font-size:17px;
+    margin-bottom:15px;
+    color:#1f2937;
+    line-height:1.6;
+}
+
+.about-highlights{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
+}
+
+.highlight{
+    background:linear-gradient(135deg,#38bdf8,#6366f1);
+    color:white;
+    padding:12px 18px;
+    border-radius:25px;
+    font-size:14px;
+    font-weight:600;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.highlight:hover{
+    transform:translateY(-3px);
+}
+</style>
+
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">CodeWithNikhil</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<div class="hero" id="home">
+    <h1>Welcome to My Arena</h1>
+    <p>Build. Learn. Create. Grow your skills with web development.</p>
+    <button class="btn">Get Started</button>
+</div>
+
+<section id="about">
+    <h2 style="text-align:center; margin-bottom:25px;">About Us</h2>
+
+    <p>
+        We are a creative and innovative technology-driven team dedicated to building modern,
+        responsive, and user-friendly digital solutions. Our focus is on delivering high-quality
+        web development, UI/UX design, and intelligent technology solutions that help businesses
+        grow in the digital world.
+    </p>
+
+    <p>
+        We specialize in creating clean, efficient, and scalable websites that provide great user
+        experience across all devices. With a strong foundation in design and development, we aim
+        to turn ideas into impactful digital products.
+    </p>
+
+    <p>
+        Our mission is to combine creativity and technology to deliver solutions that are not only
+        visually appealing but also functional and effective.
+    </p>
+
+    <div class="about-highlights">
+        <div class="highlight">💻 Responsive Web Development</div>
+        <div class="highlight">🎨 UI/UX Design</div>
+        <div class="highlight">🚀 Scalable Solutions</div>
+        <div class="highlight">⚡ Performance Optimized</div>
+    </div>
+</section>
+
+<section id="services">
+    <h2 style="text-align:center; margin-bottom:25px;">Our Services</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>We create responsive and modern websites.</p>
+        </div>
+
+        <div class="card">
+            <h3>UI/UX Design</h3>
+            <p>Clean and user-friendly interface designs.</p>
+        </div>
+
+        <div class="card">
+            <h3>AI Solutions</h3>
+            <p>Smart AI-based tools and applications.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: kundunick07@gmail.com</p>
+    <p>Phone: +91 9241957925</p>
+</section>
+
+<footer>
+    <p>© 2026 CodeWithNikhil. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
